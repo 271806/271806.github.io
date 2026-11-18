@@ -1,0 +1,13 @@
+Linux Libertine and Linux Biolinum
+Copyright (c) 2003-2012 Philipp H. Poll
+http://linuxlibertine.sourceforge.net/
+
+These fonts are dual-licensed under the GNU General Public License (version 2
+or later) with the font exception, and the SIL Open Font License, Version 1.1.
+
+  GPL:  https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  OFL:  https://openfontlicense.org/open-font-license-official-text/
+
+The .woff files in this directory are subsets (Latin characters only) of the
+original OpenType fonts, converted to WOFF with fontTools. The originals are
+available from the project page above.

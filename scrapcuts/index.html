@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScrapCuts: Fabric Scrap Recomposition with Differentiable Cutline Optimization</title>
+  <meta name="description" content="ScrapCuts jointly optimizes cutline geometry and piece placement to recompose a fixed set of fabric scraps into a target pattern. ACM SCF 2026.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ScrapCuts: Fabric Scrap Recomposition with Differentiable Cutline Optimization">
+  <meta property="og:description" content="We jointly optimize cutline geometry and piece placement to recompose a fixed set of fabric scraps into a target pattern. ACM SCF 2026.">
+  <meta property="og:url" content="https://271806.github.io/scrapcuts/">
+  <meta property="og:image" content="https://271806.github.io/scrapcuts/assets/teaser.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="../project.css">
+</head>
+
+<body>
+
+  <main class="page">
+
+    <nav id="nav" aria-label="Breadcrumb">
+      <a href="../">Home</a> / <a href="../#publications">Publications</a> / ScrapCuts
+    </nav>
+
+    <h1 id="title">ScrapCuts: Fabric Scrap Recomposition with Differentiable Cutline Optimization</h1>
+
+    <div id="authors">
+      <p><a href="../"><b class="me">Yinfei Qian</b></a>, <span>The University of Tokyo, Japan</span></p>
+      <p><a href="https://qbecky.github.io/">Quentin Becker</a>, <span>The University of Tokyo, Japan</span></p>
+      <p><a href="https://jdily.github.io/">I-Chao Shen</a>, <span>The University of Tokyo, Japan</span></p>
+      <p><a href="https://marc2825.github.io/">Masahiro Kono</a>, <span>The University of Tokyo, Japan</span></p>
+      <p><a href="https://www.uni-muenster.de/VISIX/rave.shtml">Hennes Rave</a>, <span>University of M&uuml;nster, Germany</span></p>
+      <p><a href="https://www.ma-la.com/">Maria Larsson</a>, <span>The University of Tokyo, Japan</span></p>
+      <p><a href="https://www-ui.is.s.u-tokyo.ac.jp/~takeo/">Takeo Igarashi</a>, <span>The University of Tokyo, Japan</span></p>
+      <p class="venue"><span><i>ACM Symposium on Computational Fabrication (SCF)</i>, 2026</span></p>
+    </div>
+
+    <div id="links">
+      <a href="ScrapCuts_SCF2026.pdf">[PDF, 2.9 MB]</a>
+      <a href="https://doi.org/10.1145/3828611.3845647">[DOI]</a>
+      <span class="pending" title="Coming soon">[Code]</span>
+    </div>
+
+    <a href="assets/teaser.png">
+      <img id="teaser" src="assets/teaser.png" width="2450" height="699"
+           alt="Left: two fabric scraps and a shark-fin target pattern. Middle: recompositions without cuts and with 2, 6, and 10 cuts, matching the target progressively better. Right: the 10-cut result fabricated and glued to a cushion.">
+    </a>
+    <p id="caption">
+      We present a method that recomposes scanned fabric scraps to match a given target pattern using a manageable number of cuts.
+      Starting from the input scraps and target (a), it first optimizes the rigid poses of the uncut scraps (b1),
+      then jointly optimizes cutline geometry and rigid piece poses, progressively improving the match with 2, 6, and 10 cuts (b2)&ndash;(b4).
+      We glue the resulting 10-cut scrap composition to a cushion (c).
+      Shark target artwork &copy; Darius Dan.
+    </p>
+
+    <h2>Abstract</h2>
+    <p>
+      To reuse a fixed set of fabric scraps that might otherwise be discarded, we optimize cutting and piece placement to approximate a target design.
+      Previous systems typically optimize scrap arrangements with fixed piece shapes, although cutting can improve their fit to the target.
+      We present ScrapCuts, a gradient-based formulation that parameterizes cutlines on scraps, then jointly optimizes their geometry with piece poses so that the resulting piece shapes adapt to the target.
+      We progressively introduce candidate cutlines while minimizing shape and color differences to the target, then reduce unnecessary cuts using a cut-sparsity energy.
+      We demonstrate diverse recompositions, show in an ablation that optimizing cutline geometry reduces shape and color differences in every comparison, compare with a simulated-annealing baseline, and fabricate examples using generated cut plans and an assembly guide.
+    </p>
+
+    <h2 id="video">Supplementary Video</h2>
+    <video controls preload="metadata" poster="assets/video_poster.jpg">
+      <source src="assets/scrapcuts_video.mp4" type="video/mp4">
+      Your browser does not support embedded video.
+      <a href="assets/scrapcuts_video.mp4">Download the video</a> instead.
+    </video>
+
+    <h2 id="bibtex">BibTeX</h2>
+    <pre><code>@inproceedings{Qian2026ScrapCuts,
+    author    = {Qian, Yinfei and Becker, Quentin and Shen, I-Chao and Kono, Masahiro and
+                 Rave, Hennes and Larsson, Maria and Igarashi, Takeo},
+    title     = {ScrapCuts: Fabric Scrap Recomposition with Differentiable Cutline Optimization},
+    booktitle = {Proceedings of the 11th ACM Symposium on Computational Fabrication},
+    series    = {SCF '26},
+    year      = {2026},
+    publisher = {Association for Computing Machinery},
+    address   = {New York, NY, USA},
+    location  = {Tokyo, Japan},
+    isbn      = {979-8-4007-2821-1},
+    doi       = {10.1145/3828611.3845647},
+    url       = {https://doi.org/10.1145/3828611.3845647},
+    numpages  = {18},
+    keywords  = {computational fabrication, textile reuse, differentiable rendering}
+}</code></pre>
+
+    <p class="credit">
+      Project pages are inspired by the websites of
+      <a href="https://qbecky.github.io/">Quentin Becker</a> and
+      <a href="https://zoemarschner.com/">Zo&euml; Marschner</a>.
+    </p>
+
+  </main>
+</body>
+
+</html>

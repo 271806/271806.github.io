@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real-time Image-based Virtual Try-on with Measurement Garment</title>
+  <meta name="description" content="A real-time image-based virtual try-on system: the user wears a color-coded measurement garment, and the system synthesizes target garments with detailed wrinkles. SIGGRAPH Asia 2021 Emerging Technologies.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Real-time Image-based Virtual Try-on with Measurement Garment">
+  <meta property="og:description" content="A real-time image-based virtual try-on system using a color-coded measurement garment. SIGGRAPH Asia 2021 Emerging Technologies.">
+  <meta property="og:url" content="https://271806.github.io/tryon/">
+  <meta property="og:image" content="https://271806.github.io/tryon/assets/teaser.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="../project.css">
+</head>
+
+<body>
+
+  <main class="page">
+
+    <nav id="nav" aria-label="Breadcrumb">
+      <a href="../">Home</a> / <a href="../#publications">Publications</a> / Virtual Try-on
+    </nav>
+
+    <h1 id="title">Real-time Image-based Virtual Try-on with Measurement Garment</h1>
+
+    <div id="authors">
+      <p><a href="https://sites.google.com/view/tobyclh">Toby Chong</a>, <span>The University of Tokyo, Japan</span></p>
+      <p><a href="https://jdily.github.io/">I-Chao Shen</a>, <span>The University of Tokyo, Japan</span></p>
+      <p><a href="../"><b class="me">Yinfei Qian</b></a>, <span>The University of Tokyo, Japan</span></p>
+      <p><a href="https://cgenglab.github.io/en/authors/admin/">Nobuyuki Umetani</a>, <span>The University of Tokyo, Japan</span></p>
+      <p><a href="https://www-ui.is.s.u-tokyo.ac.jp/~takeo/">Takeo Igarashi</a>, <span>The University of Tokyo, Japan</span></p>
+      <p class="venue"><span><i>ACM SIGGRAPH Asia Emerging Technologies</i>, 2021</span></p>
+    </div>
+
+    <div id="links">
+      <a href="VirtualTryOn_SA2021_ETech.pdf">[PDF, 7.4 MB]</a>
+      <a href="https://doi.org/10.1145/3476122.3484832">[DOI]</a>
+      <a href="https://sites.google.com/view/deepmannequin">[Related UIST 2021 Project]</a>
+    </div>
+
+    <a href="assets/teaser.jpg">
+      <img id="teaser" src="assets/teaser.jpg" width="2102" height="862"
+           alt="Left: a user wearing a color-coded T-shirt stands in front of a screen that shows them wearing a blue knit sweater. Right: four people in different poses wearing the color-coded measurement garment (top row), and the same frames with the garment replaced by a plaid shirt, a floral T-shirt, a white T-shirt, and a blue sweater (bottom row).">
+    </a>
+    <p id="caption">
+      Our real-time system allows the user to virtually try-on various garments using different interactions, such as stretching the body and pulling the garment.
+      The user first wears the color-coded measurement garment (top row), and our system synthesizes the target garments with detailed wrinkles according to different motions.
+    </p>
+
+    <h2>Abstract</h2>
+    <p>
+      Virtual try-on technology that replaces a customer&rsquo;s wearing with arbitrary garments can significantly improve the online cloth shopping experience.
+      In this work, we present a real-time image-based virtual try-on system composed of two parts, i.e., photo-realistic clothed person image synthesis for the customers to experience the try-on result and garment capturing for the retailers to capture the rich deformations of the target garment.
+      Distinguished from previous image-based virtual try-on works, we formulate the problem as a supervised image-to-image translation problem using a measurement garment, and we capture the training data with a custom actuated mannequin.
+    </p>
+
+    <h2 id="bibtex">BibTeX</h2>
+    <pre><code>@inproceedings{10.1145/3476122.3484832,
+    author    = {Chong, Toby and Shen, I-Chao and Qian, Yinfei and Umetani, Nobuyuki and
+                 Igarashi, Takeo},
+    title     = {Real-time Image-based Virtual Try-on with Measurement Garment},
+    booktitle = {SIGGRAPH Asia 2021 Emerging Technologies},
+    series    = {SA '21},
+    year      = {2021},
+    publisher = {Association for Computing Machinery},
+    address   = {New York, NY, USA},
+    location  = {Tokyo, Japan},
+    isbn      = {9781450386852},
+    doi       = {10.1145/3476122.3484832},
+    url       = {https://doi.org/10.1145/3476122.3484832},
+    articleno = {13},
+    numpages  = {2},
+    keywords  = {Virtual Try-on, Deep image synthesis}
+}</code></pre>
+
+    <p class="credit">
+      Project pages are inspired by the websites of
+      <a href="https://qbecky.github.io/">Quentin Becker</a> and
+      <a href="https://zoemarschner.com/">Zo&euml; Marschner</a>.
+    </p>
+
+  </main>
+</body>
+
+</html>

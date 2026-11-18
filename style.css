@@ -1,0 +1,245 @@
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('fonts/LinLibertine-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('fonts/LinLibertine-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('fonts/LinLibertine-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('fonts/LinLibertine-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Biolinum';
+  src: url('fonts/LinBiolinum-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Biolinum';
+  src: url('fonts/LinBiolinum-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Biolinum';
+  src: url('fonts/LinBiolinum-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-body: 'Linux Libertine', 'Times New Roman', serif;
+  --font-heading: 'Linux Biolinum', Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+h1, h2, h4, .pub-text {
+  font-family: var(--font-heading);
+}
+
+p {
+  margin: 2px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 22px;
+}
+
+.pic {
+  flex: none;
+  margin: 0 36px 15px 15px;
+  text-align: center;
+  line-height: 0;
+}
+
+.photo {
+  width: 50vw;
+  max-width: 200px;
+}
+
+.header-info {
+  align-self: flex-start;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0;
+  margin-top: -0.225em;
+}
+
+.bio1 {
+  margin-top: 20px;
+}
+
+.bio {
+  margin-top: 12px;
+}
+
+.bio p {
+  margin: 0 0 1em 0;
+}
+
+hr {
+  height: 0px;
+  border: none;
+  border-top: 1px solid black;
+  margin-top: 20px;
+}
+
+h2 {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+li {
+  margin: 2px;
+}
+
+ul {
+  margin: 2px;
+  padding-left: 20px;
+}
+
+.news {
+  background-color: #EEE;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.detail {
+  font-size: 16px;
+}
+
+.pub {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.pub-image {
+  flex: none;
+  width: 150px;
+  height: 85px;
+  margin: 0 20px;
+  object-fit: contain;
+}
+
+.pub-title {
+  font-size: 21px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.pub-authors, .pub-venue, .pub-note, .pub-links {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.pub-links {
+  padding-top: 4px;
+}
+
+.me {
+  font-weight: bold;
+}
+
+.credit {
+  margin: 10px 0 24px;
+  text-align: center;
+  font-size: 13px;
+  color: #808080;
+}
+
+.credit a {
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo {
+    width: 35vw;
+  }
+
+  .pic {
+    margin: 0 16px 12px 0;
+  }
+
+  .bio1 {
+    margin-top: 8px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+  }
+
+  .pub {
+    align-items: flex-start;
+  }
+
+  .pub-image {
+    width: 90px;
+    height: 51px;
+    margin: 4px 12px 0 0;
+  }
+
+  .pub-title {
+    font-size: 18px;
+  }
+
+  .pub-authors, .pub-venue, .pub-note, .pub-links {
+    font-size: 15px;
+  }
+}
